@@ -1,0 +1,114 @@
+For Initialisation
+open cmd
+1.git init
+2.git config --global user.name "UjwalaDeviPeteti"
+3.git config --global user.email "petetiujwaladevi26@gmail.com"
+4.git config --list
+after that
+open that folder path then type cmd
+1.git status
+2.git add filename    (we can add one file at a time)//for transforming files into
+                       working area into staging area we use git add .
+3.git add .   (we can add all the files at a time)
+**now all the files are in staging area.
+**To transform the files in staging area to local repository we have to use commit
+4.git commit -m "any message that we want"
+now we have to open the github and choose the repository then copy the path and paste it in 5th step
+ex.
+5.git remote add origin https://github.com/UjwalaDeviPeteti/hii.git  (like this)
+6.git push -u origin branch1 (here check the branch )(for checking branch we use git branch)
+Now all the files are transformed in your repository called hii.
+
+
+Branches
+  if we want to add some files in that repository then we have to create a branch
+**open that folder path then type cmd and open it.
+1.git checkout -b copy1(for creating branch or for going to that particular branch path)
+2.git status
+3.git branch(for checking which branch we are in )
+4.git add .(it will add all the remaining files that you want to add)
+5.git status
+6.git commit -m "write the message"
+7.git push (it shows the path in the below description copy the path and paste it like ....)
+8.git push --set-upstream origin copy1(this is the path from above description)
+ like this our new files are added to our branch
+
+compare and pull request
+**if we want to add this modified code in to main branch we have to use compare and pull request
+1.if you click on that it shows like merge pull request 
+2.if we merge that code then the files in copy1 are transformed to master branch.
+
+
+upload files 
+1.we can upload files also 
+2.click on add file it shows 
+    create new file 
+    upload files
+3.if we click on upload files we have to choose the path then confirm merge
+4.then that file will add in our repository
+
+download
+1.if we want to download click on code button then it shows download zip then easily we can download the repository.
+2.by using clone also we can download
+we can copy the link in code button then
+C:\Users\msrip\OneDrive\Desktop\git notes>git clone https://github.com/UjwalaDeviPeteti/testing.git   //copy link here
+Cloning into 'testing'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (10/10), 2.60 MiB | 125.00 KiB/s, done.
+
+C:\Users\msrip\OneDrive\Desktop\git notes>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\msrip\OneDrive\Desktop\git notes>dir
+ Volume in drive C is OS
+ Volume Serial Number is DA6C-8525
+
+ Directory of C:\Users\msrip\OneDrive\Desktop\git notes
+
+23-08-2023  18:58    <DIR>          .
+23-08-2023  18:55    <DIR>          ..
+23-08-2023  18:58    <DIR>          testing
+               0 File(s)              0 bytes
+               3 Dir(s)  62,024,364,032 bytes free
+
+C:\Users\msrip\OneDrive\Desktop\git notes>cd  testing
+
+C:\Users\msrip\OneDrive\Desktop\git notes\testing>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\msrip\OneDrive\Desktop\git notes\testing>git add .
+
+C:\Users\msrip\OneDrive\Desktop\git notes\testing>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+C:\Users\msrip\OneDrive\Desktop\git notes\testing>git commit -m "new"
+[main 3b96f5a] new
+ 1 file changed, 4 insertions(+)
+
+
+delete repository
+1.goto that repository then at the top it shows setting 
+2.after click on settings  at bottom it shows delete repository
+3.just copy that repository name then paste it and delete that repository
+
+
+
+
+
