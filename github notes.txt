@@ -109,6 +109,39 @@ delete repository
 3.just copy that repository name then paste it and delete that repository
 
 
+----------------------------------------------------------------------
+# Step 1: Check which branch you’re on
+
+git branch
+ 
+# Step 2: Pull the latest changes
+
+git pull origin main
+ 
+# Step 3: Stage your changes
+
+git add .
+ 
+# Step 4: Commit your changes
+
+git commit -m "Your commit message"
+ 
+# Step 5: Push changes to GitHub
+
+git push origin main
+ 
+git checkout main
+
+git pull origin main
+
+git merge feature-branch
+
+git push origin main
+
+ 
+
+
+
 
 
 
